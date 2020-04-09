@@ -1,4 +1,4 @@
-package com.ksc.rjh.entity;
+package com.ks.rjh.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,14 +6,14 @@ import javax.persistence.Id;
 @Entity
 public class User_Info {
 	
-	  private String id;
-	  @Id
-	  private int no;
-	  private String password;
-	  private String auth1;
-	  private String status;
-	  private String reg_date;
-	  private String email;
+	   private String id;
+	   @Id
+	   private int no;
+	   private String password;
+	   private String auth1;
+	   private String status;
+	   private String reg_date;
+	   private String email;
 	/**
 	 * @return id
 	 */
@@ -98,6 +98,10 @@ public class User_Info {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	  
-	  
+	@Override
+	public String toString() {
+		return "User_info [id=" + id + ", no=" + no + ", password=" + password + ", auth1=" + auth1 + ", status="
+				+ status + ", reg_date=" + reg_date + ", email=" + email + "]";
+	}
+	
 }

@@ -1,4 +1,4 @@
-package com.ksc.rjh;
+package com.ks.rjh;
 
 import java.text.DateFormat;
 import java.util.Date;

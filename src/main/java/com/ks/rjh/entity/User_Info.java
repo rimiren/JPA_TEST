@@ -1,5 +1,6 @@
 package com.ks.rjh.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
@@ -12,12 +13,15 @@ import javax.persistence.Table;
         query = "select u from User_Info u where u.password = :password and u.id = :id")
 public class User_Info {
 	
-	   private String id;
 	   @Id
 	   private int no;
+	   private String id;
 	   private String password;
+	   @Column(insertable = false)
 	   private String auth1;
+	   @Column(insertable = false)
 	   private String status;
+	   @Column(insertable = false)
 	   private String reg_date;
 	   private String email;
 	/**

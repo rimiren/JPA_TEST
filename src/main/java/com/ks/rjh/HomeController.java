@@ -1,6 +1,5 @@
 package com.ks.rjh;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ks.rjh.service.LoginService;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 	
@@ -27,7 +23,8 @@ public class HomeController {
 	public ModelAndView home() {
 		
 		ModelAndView mv = new ModelAndView("home");
-
+		
+		logger.info("초기처리");
 		logger.debug("초기처리");
 
 		return mv;
@@ -40,11 +37,13 @@ public class HomeController {
 		
 		ModelAndView mv = new ModelAndView("result");
 		
+		//호출
 		int count = loginservice.checkLogin(id, password);
 		
 		mv.addObject("count", count);
 		
 		return mv;
 	}
+	
 	
 }

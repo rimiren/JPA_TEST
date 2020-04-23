@@ -18,5 +18,8 @@
 	<input type="submit" value="로그인">
 </form>
 
+<a href="movereguser">Don't you have Account?</a><br>
+<a href="movefindpassword">Forgot your password?</a>
+
 </body>
 </html>

@@ -21,5 +21,11 @@
 <a href="movereguser">Don't you have Account?</a><br>
 <a href="movefindpassword">Forgot your password?</a>
 
+<form action="wbs_test">
+	사원번호 : <br>
+	<input type= "text" name = "u_no" required="required"><br><br>
+	<input type= "submit" value = "근태확인">
+</form>
+
 </body>
 </html>

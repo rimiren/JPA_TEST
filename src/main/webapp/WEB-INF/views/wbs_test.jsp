@@ -33,7 +33,6 @@
 		<td>${workplace.max_time }시간</td>
 		</c:forEach>
 	</tr>
-		<c:forEach items = "${wbs2020 }" var = "wbs2020">
 		<tr style="background-color: lightblue">
 		<th>일자</th>
 		<th>출근시간</th>
@@ -42,6 +41,7 @@
 		<th>휴일구분</th>
 		<th>비고</th>
 	</tr>
+		<c:forEach items = "${wbs2020 }" var = "wbs2020">
 	<tr>
 		<td>${wbs2020.date} </td>
 		<td>${wbs2020.start_time } </td>
